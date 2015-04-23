@@ -11,7 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150422161545) do
+ActiveRecord::Schema.define(version: 20150423184030) do
+
+
 
   create_table "invoices", force: :cascade do |t|
     t.datetime "date"
