@@ -3,9 +3,11 @@ class InvoicesController < ApplicationController
 
   # GET /invoices
   # GET /invoices.json
-  def index
-    @invoices = Invoice.all
-  end
+   def index
+    @search = InvoiceSearch.new(params[:search])
+    @invoices = @search.scope
+   end
+
 
   # GET /invoices/1
   # GET /invoices/1.json
