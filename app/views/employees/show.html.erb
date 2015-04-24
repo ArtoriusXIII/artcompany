@@ -4,6 +4,10 @@
   <strong>Name:</strong>
   <%= @employee.name %>
 </p>
+<p>
+  <strong>Last name:</strong>
+  <%= @employee.last_name %>
+</p>
 
 <p>
   <strong>Phone:</strong>
@@ -13,6 +17,30 @@
 <p>
   <strong>Job type:</strong>
   <%= @employee.job_type %>
+</p>
+<p>
+  <strong>Date of hire:</strong>
+  <%= @employee.date_of_hire %>
+</p>
+<p>
+  <strong>Salary:</strong>
+  <%= @employee.salary %>
+</p>
+<p>
+  <strong>Vacation days:</strong>
+  <%= @employee.vacation_days %>
+</p>
+<p>
+  <strong>status:</strong>
+  <%= @employee.status %>
+</p>
+<p>
+  <strong>department:</strong>
+  <%= @employee.department %>
+</p>
+<p>
+  <strong>manager:</strong>
+  <%= @employee.manager %>
 </p>
 
 <%= link_to 'Edit', edit_employee_path(@employee) %> |

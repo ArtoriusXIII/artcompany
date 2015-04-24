@@ -15,6 +15,10 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+   <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
   <div class="field">
     <%= f.label :phone %><br>
     <%= f.text_field :phone %>
@@ -22,6 +26,30 @@
   <div class="field">
     <%= f.label :job_type %><br>
     <%= f.text_field :job_type %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_hire %><br>
+    <%= f.datetime_select :date_of_hire %>
+  </div>
+  <div class="field">
+    <%= f.label :salary %><br>
+    <%= f.number_field :salary %>
+  </div>
+  <div class="field">
+    <%= f.label :vacation_days %><br>
+    <%= f.number_field :vacation_days %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :department %><br>
+    <%= f.text_field :department %>
+  </div>
+  <div class="field">
+    <%= f.label :manager %><br>
+    <%= f.text_field :manager %>
   </div>
   <div class="actions">
     <%= f.submit %>

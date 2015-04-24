@@ -9,8 +9,15 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Last name</th>
       <th>Phone</th>
       <th>Job type</th>
+      <th>Date of Hire</th>
+      <th>Salary</th>
+      <th>Vacation days</th>
+      <th>Status</th>
+      <th>Department</th>
+      <th>Manager</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,8 +26,15 @@
     <% @employees.each do |employee| %>
       <tr>
         <td><%= employee.name %></td>
+        <td><%= employee.last_name %></td>
         <td><%= employee.phone %></td>
         <td><%= employee.job_type %></td>
+        <td><%= employee.date_of_hire %></td>
+        <td><%= employee.salary %></td>
+        <td><%= employee.vacation_days %></td>
+        <td><%= employee.status %></td>
+        <td><%= employee.department %></td>
+        <td><%= employee.manager%></td>
         <td><%= link_to 'Show', employee %></td>
         <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
         <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
