@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @employee.name %>
+  <strong>First name:</strong>
+  <%= @employee.first_name %>
 </p>
 <p>
   <strong>Last name:</strong>
@@ -45,3 +45,9 @@
 
 <%= link_to 'Edit', edit_employee_path(@employee) %> |
 <%= link_to 'Back', employees_path %>
+
+<!-- Include a link so that a user can request to see the account details of the current selected customer --> 
+<h3> Employee's account details</h3>
+
+<%= link_to "Show Account Details", employee_accounts_path(@employee) %>
+
